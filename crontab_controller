@@ -1,0 +1,30 @@
+#======================== 《任务调度机控制器》 ========================#
+#                     提供灵活调度任务等的控制和管理                   #
+#======================================================================#
+
+# 日志DEBUG开关 (ON|OFF)
+g_debug_switch='OFF'
+
+# crontab_common_task.ini 公共任务配置文件的属主和属组
+g_user='root'
+g_group='root'
+
+# 关闭每x分执行一次的任务 (暂不支持)
+g_cancel_x_min_task=''
+
+# 关闭所有每分钟执行一次的任务 (ON|OFF)
+g_cancel_all_1_min_task='OFF'
+
+# 关闭某定点执行的任务 (格式 12:00)
+g_cancel_daily_task=''
+
+# 关闭所有定点执行的任务 (ON|OFF)
+g_cancel_all_daily_task='OFF'
+
+# 关闭所有任务调用 (ON|OFF)
+g_cancel_all_task='OFF'
+
+# 当有其他程序调用scheduler时，是否杀死这些进程 (ON|OFF)
+# 【比如某人在vim crontab_scheduler.sh】
+g_kill_bad_process='OFF'
+
