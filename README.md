@@ -11,5 +11,5 @@ crontab_scheduler.sh
 主进程脚本；系统crond调用
 
 用法：
-只需要在crontab中加入 */1 * * * * sh /<YourPath>/crontab_scheduler.sh 
+只需要在crontab中加入 */1 * * * * sh /YourPath/crontab_scheduler.sh 
 即可调用主进程，然后主进程负责调用配置文件中的合个任务子进程。
