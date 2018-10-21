@@ -13,3 +13,8 @@ crontab_scheduler.sh
 用法：
 只需要在crontab中加入 */1 * * * * sh /YourPath/crontab_scheduler.sh 
 即可调用主进程，然后主进程负责调用配置文件中的合个任务子进程。
+
+注意这三个文件所在的目录结构：
+  /YOURPATH/crontab_scheduler.sh
+  /YOURPATH/log/crontab_controller
+  /YOURPATH/log/crontab_common_task.ini
