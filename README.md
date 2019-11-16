@@ -1,24 +1,24 @@
-Bash 小项目 《crontab调度器》
+***
+__《crontab调度器》__
+***
+__功能：__
 
-释放大量的crontab定时任务，把这些任务写进此调度器的任务列表中，由此调度器来调度，方便管理和维护及扩展
+* 托管操作系统的cron任务，统一由此调度器来调度，方便管理维护及动态扩展。
 
-crontab_common_task.ini
-
-公共任务配置文件；提供给其他进程添加和删除任务的配置文件
-
-crontab_controller
-
-调度机控制器；提供灵活调度任务等的控制和管理
-
-crontab_scheduler.sh
-
-主进程脚本；系统crond调用
-
-用法：
+__用法：__
 只需要在crontab中加入 */1 * * * * sh /YourPath/crontab_scheduler.sh 
 即可调用主进程，然后主进程负责调用配置文件中的合个任务子进程。
 
-注意这三个文件所在的目录结构：
+***
+__crontab_common_task.ini:__
+* 公共任务配置文件；提供给其他进程添加和删除任务的配置文件
+__crontab_controller__
+* 调度机控制器；提供灵活调度任务等的控制和管理
+__crontab_scheduler.sh__
+* 主进程脚本；系统crond调用
+***
+
+__注意这三个文件所在的目录结构：__
 
 /YOURPATH/crontab_scheduler.sh
 
